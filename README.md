@@ -5,7 +5,7 @@ Overview
 AI News Hub is an AI-powered web application that aggregates real-time news articles from multiple categories using an open-source News API.
 It performs sentiment analysis to evaluate the tone of each article (positive, neutral, or negative) and uses Web Speech AI to read the articles aloud for accessibility.
 
-Features
+# Features
 
 - Fetches live news from multiple categories (Technology, Sports, Business, etc.)
 
@@ -18,7 +18,7 @@ Features
 - Uses asynchronous API calls for real-time updates
 
 
-Tech Stack
+# Tech Stack
 - Front-End	HTML, CSS, JavaScript
 - Sentiment Analysis (Hugging Face)
 - NewsAPI.org / NewsData.io
@@ -26,7 +26,7 @@ Tech Stack
 - VS Code, GitHub, Browser APIs
 
 
-How It Works:
+# How It Works:
 The app fetches headlines from an open-source news API. Each article’s headline and description are analyzed for sentiment polarity. Sentiment scores (positive, negative, neutral) are displayed visually via color indicators. Users can click a button to hear articles read aloud using the Web Speech AI.
 
 
@@ -38,4 +38,9 @@ git clone https://github.com/<sameers131>/ai-news-hub.git
 cd ai-news-hub
 
 
-Video: https://www.youtube.com/watch?v=l4rZc9HtCFE
+
+
+
+
+
+Video File: https://www.youtube.com/watch?v=l4rZc9HtCFE
