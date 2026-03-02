@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>News Hub</h1>
+
+        <!--button header section-->
+        <nav class="category-buttons">
+            <button class="button active" data-category="general" onclick="switchCategory('general')">General</button>
+            <button class="button" data-category="technology" onclick="switchCategory('technology')">Tech</button>
+            <button class="button" data-category="sports" onclick="switchCategory('sports')">Sports</button>
+            <button class="button" data-category="health" onclick="switchCategory('health')">Health</button>
+            <button class="button" data-category="business" onclick="switchCategory('business')">Business</button>
+            <button class="button" data-category="science" onclick="switchCategory('science')">Science</button>
+            <button class="button" data-category="entertainment" onclick="switchCategory('entertainment')">Entertainment</button>
+        </nav>
+    </header>
+
+    <!--Main section where we progressively add containers of info from the API-->
+    <main>
+        <div id="grid" class="news-grid">
+            
+        </div>
+    </main>
+
+    <script src="news.js"></script>
+</body>
+</html>
