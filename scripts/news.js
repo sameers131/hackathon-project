@@ -22,7 +22,7 @@ async function switchCategory(category) {
 
 async function generateNews(category = 'general') {
   try {
-    // this calls YOUR backend server (server.js)
+    
     const response = await fetch(`/api/news?category=${encodeURIComponent(category)}`);
 
     if (!response.ok) {
