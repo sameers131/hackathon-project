@@ -1,46 +1,49 @@
-# hackathon-project
-📰 AI News Hub
+# Hackathon Project – AI News Hub
 Overview
 
-AI News Hub is an AI-powered web application that aggregates real-time news articles from multiple categories using an open-source News API.
-It performs sentiment analysis to evaluate the tone of each article (positive, neutral, or negative) and uses Web Speech AI to read the articles aloud for accessibility.
+AI News Hub is a full-stack news aggregation platform built with a custom Node.js backend and vanilla JavaScript frontend. The application securely proxies NewsAPI requests through a manually implemented TCP-based HTTP server to protect API credentials while dynamically rendering categorized news content in the browser.
 
-# Features
+# Key Technical Highlights
 
-- Fetches live news from multiple categories (Technology, Sports, Business, etc.)
+Custom HTTP server built using Node’s net module (no Express)
 
-- Performs sentiment analysis on article headlines/descriptions using NLP
+Manual HTTP request parsing and routing
 
-- Integrates Web Speech API for text-to-speech article reading
+Secure API key management via environment variables (dotenv)
 
-- Displays categorized headlines in a clean, responsive UI built with HTML/CSS/JS
+Backend proxy pattern to prevent client-side credential exposure
 
-- Uses asynchronous API calls for real-time updates
+Asynchronous request handling using Promises and async/await
 
+Client-side sentiment analysis engine for article classification
 
-# Tech Stack
-- Front-End	HTML, CSS, JavaScript
-- Sentiment Analysis (Hugging Face)
-- NewsAPI.org / NewsData.io
-- Web Speech AI (Google voice)
-- VS Code, GitHub, Browser APIs
+Dynamic DOM rendering and Fetch API integration
 
+Browser-based text-to-speech using Web Speech API
 
-# How It Works:
-The app fetches headlines from an open-source news API. Each article’s headline and description are analyzed for sentiment polarity. Sentiment scores (positive, negative, neutral) are displayed visually via color indicators. Users can click a button to hear articles read aloud using the Web Speech AI.
+System Architecture
 
+# Frontend:
 
-Setup Instructions:
-# Clone this repository
-git clone https://github.com/<sameers131>/ai-news-hub.git
+HTML / CSS / Vanilla JavaScript
 
-# Navigate into the project folder
-cd ai-news-hub
+Fetch API for backend communication
 
+Real-time DOM updates
 
+Custom sentiment scoring logic
 
+# Backend:
 
+Node.js
 
+TCP socket server (net.createServer)
 
+Manual HTTP header parsing
 
-Video File: https://www.youtube.com/watch?v=l4rZc9HtCFE
+REST-style route handling (/api/news)
+
+External API integration (NewsAPI)
+
+# Video Link
+https://youtu.be/l4rZc9HtCFE
